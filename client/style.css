@@ -1,0 +1,9 @@
+html, body{
+    background-color: #333;
+    color: white;
+    font-size: larger;
+}
+
+div{
+    border: 1px solid red;
+}
