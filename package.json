@@ -1,0 +1,24 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "setup": "npm i",
+    "dev": "SERVER_PORT=6969 nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyvas/shoppinglist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonyvas/shoppinglist/issues"
+  },
+  "homepage": "https://github.com/tonyvas/shoppinglist#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
