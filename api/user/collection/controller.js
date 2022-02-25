@@ -33,25 +33,26 @@ router.post('/', (req, res) => {
     let user = req.body.user
     let collection = req.body.collection;
 
-    // model.createUser(user).then(() => {
-    //     res.status(200).json({error: null, data: null});
-    // }).catch(err => {
-    //     console.error('User Controller Error at createUser', err);
-    //     res.status(500).json({error: `Failed to create user`, data: err.message})
-    // })
+    model.createCollection(user, collection).then(() => {
+        res.status(200).json({error: null, data: null});
+    }).catch(err => {
+        console.error('Collection Controller Error at createCollection', err);
+        res.status(500).json({error: `Failed to create collection`, data: err.message})
+    })
 })
 
 // Update collection
 router.put('/', (req, res) => {
     let user = req.body.user
     let collection = req.body.collection;
+    let data = req.body.data;
 
-    // model.createUser(user).then(() => {
-    //     res.status(200).json({error: null, data: null});
-    // }).catch(err => {
-    //     console.error('User Controller Error at createUser', err);
-    //     res.status(500).json({error: `Failed to create user`, data: err.message})
-    // })
+    model.updateCollection(user, collection, data).then(() => {
+        res.status(200).json({error: null, data: null});
+    }).catch(err => {
+        console.error('Collection Controller Error at updateCollection', err);
+        res.status(500).json({error: `Failed to update collection`, data: err.message})
+    })
 })
 
 // Delete collection
@@ -59,12 +60,12 @@ router.delete('/', (req, res) => {
     let user = req.body.user
     let collection = req.body.collection;
 
-    // model.createUser(user).then(() => {
-    //     res.status(200).json({error: null, data: null});
-    // }).catch(err => {
-    //     console.error('User Controller Error at createUser', err);
-    //     res.status(500).json({error: `Failed to create user`, data: err.message})
-    // })
+    model.deleteCollection(user, collection).then(() => {
+        res.status(200).json({error: null, data: null});
+    }).catch(err => {
+        console.error('Collection Controller Error at deleteCollection', err);
+        res.status(500).json({error: `Failed to delete collection`, data: err.message})
+    })
 })
 
 module.exports = router;

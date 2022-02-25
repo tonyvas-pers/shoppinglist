@@ -14,7 +14,8 @@ function getCollectionNames(user){
                             // Filter out hidden files (deleted collections)
                             for (let file of files){
                                 if (!file.startsWith('.')){
-                                    names.push(file)
+                                    // Remove extension from filename
+                                    names.push(file.split('.json')[0]);
                                 }
                             }
             
