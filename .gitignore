@@ -1,3 +1,7 @@
+# everything under userdata
+userdata/*
+!userdata/example
+
 # Logs
 logs
 *.log

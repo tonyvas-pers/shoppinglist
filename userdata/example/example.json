@@ -1,0 +1,73 @@
+{
+    "name": "NAS",
+    "contents": {
+        "items": [
+            {
+                "name": "SFF-8087 to SFF-8482 Breakout Cable",
+                "price": 25
+            },
+            {
+                "name": "4x SAS 2TB HDD",
+                "price": 125
+            }
+        ],
+        "choices": [
+            {
+                "name": "Chassis",
+                "contents": {
+                    "options": [
+                        {
+                            "name": "Steal from Optiplex",
+                            "contents": {
+                                "items": [
+                                    {
+                                        "name": "H61 Motherboard",
+                                        "price": 50
+                                    },
+                                    {
+                                        "name": "Intel Stock Cooler",
+                                        "price": 20
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "New System Parts",
+                            "contents": {
+                                "items": [
+                                    {
+                                        "name": "H61 Motherboard",
+                                        "price": 50
+                                    },
+                                    {
+                                        "name": "Intel Stock Cooler",
+                                        "price": 20
+                                    },
+                                    {
+                                        "name": "Some Shitty CPU",
+                                        "price": 50
+                                    },
+                                    {
+                                        "name": "2x 8GB DDR3 RAM",
+                                        "price": 60
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "New Built System",
+                            "contents": {
+                                "items": [
+                                    {
+                                        "name": "Some Crappy System",
+                                        "price": 150
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
