@@ -1,0 +1,35 @@
+h1, h2{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 30%;
+
+    margin-left: 35%;
+    margin-top: 5%;
+
+    border: 1px solid white;
+}
+
+table{
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+tr{
+    border: 1px solid white;
+}
+
+th, td{
+    padding: 10px 20px 10px 20px;
+}
+
+#create_user_inputs_div{
+    display: flex;
+    justify-content: center;
+}

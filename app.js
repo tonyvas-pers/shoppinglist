@@ -7,6 +7,7 @@ startServer();
 
 function setEnv(){
     // Set environment variables
+    process.env.PUBLIC_PATH = `${__dirname}/public`;
     process.env.USER_DATA_DIR = `${__dirname}/userdata`
     process.env.DEFAULT_COLLECTION_JSON_PATH = `${__dirname}/default-collection.json`
 }
@@ -19,11 +20,25 @@ function startServer(){
         console.log(`${new Date().toLocaleString()} | ${req.socket.remoteAddress} | ${req.url}`);
         next();
     });
+
+    app.get('/', (req, res) => {
+        res.redirect('/login');
+    })
+
+    app.get('/login', (req, res) => {
+        res.render('login');
+    })
+
+    app.get('/collections', (req, res) => {
+        res.render('collections');
+    })
     
+    // EJS for front end
+    app.set('view engine', 'ejs')
+    // Public path for assets
+    app.use(express.static(process.env.PUBLIC_PATH));
     // Use json parser for http POST PUT and DELETE requests
     app.use(express.json());
-    // Serve front end
-    app.use(express.static(`${__dirname}/client`));
     // Handle api routes
     app.use('/api', require('./api/routes'));
 

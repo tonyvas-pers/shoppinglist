@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+
+        <div id="create_user_div">
+            <h2>Create User</h2>
+            <div id="create_user_inputs_div">
+                <input type="text" id="name_txt" placeholder="Username">
+                <input type="button" id="name_btn" value="Add">
+            </div>
+        </div>
+
+        <div id="user_table_div">
+            <h2>Existing User</h2>
+            <table>
+                <colgroup>
+                    <col style="width: 70%;">
+                    <col style="width: 30%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody id="user_tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>
