@@ -67,6 +67,35 @@
                         }
                     ]
                 }
+            },
+            {
+                "name": "test choice",
+                "contents": {
+                    "options": [
+                        {
+                            "name": "test option A",
+                            "contents": {
+                                "items": [
+                                    {
+                                        "name": "test item",
+                                        "price": 50
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "test option B",
+                            "contents": {
+                                "items": [
+                                    {
+                                        "name": "other item",
+                                        "price": 10
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
             }
         ]
     }
